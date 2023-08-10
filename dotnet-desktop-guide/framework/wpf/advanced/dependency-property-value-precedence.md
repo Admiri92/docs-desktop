@@ -33,9 +33,9 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
  :::code language="xaml" source="./snippets/dependency-property-value-precedence/xaml/MainWindow.xaml" id="DependencyPropertyValuePrecedence":::
   
- Here, which color do you expect will apply—red, green, or blue?  
+ Here, which color do you expect will apply—red, yellow, or blue?  
   
- With the exception of animated values and coercion, local property sets are set at the highest precedence. If you set a value locally you can expect that the value will be honored, even above any styles or control templates. Here in the example, <xref:System.Windows.Controls.Control.Background%2A> is set to Red locally. Therefore, the style defined in this scope, even though it is an implicit style that would otherwise apply to all elements of that type in that scope, is not the highest precedence for giving the <xref:System.Windows.Controls.Control.Background%2A> property its value.  If you removed the local value of Red from that Button instance, then the style would have precedence and the button would obtain the Background value from the style.  Within the style, triggers take precedence, so the button will be blue if the mouse is over it, and green otherwise.  
+ With the exception of animated values and coercion, local property sets are set at the highest precedence. If you set a value locally you can expect that the value will be honored, even above any styles or control templates. Here in the example, <xref:System.Windows.Controls.Control.Background%2A> is set to Red locally. Therefore, the style defined in this scope, even though it is an implicit style that would otherwise apply to all elements of that type in that scope, is not the highest precedence for giving the <xref:System.Windows.Controls.Control.Background%2A> property its value.  If you removed the local value of Red from that Button instance, then the style would have precedence and the button would obtain the Background value from the style.  Within the style, triggers take precedence, so the button will be blue if the mouse is over it, and yellow otherwise.  
   
 <a name="listing"></a>
 
